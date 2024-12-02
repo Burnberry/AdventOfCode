@@ -2,10 +2,10 @@ from help import *
 
 
 def parse_input():
-    a = []
+    lines = []
     for line in get_input():
-        a.append(line)
-    return a
+        lines.append(line)
+    return lines,
 
 
 def solution1(*inputs):
