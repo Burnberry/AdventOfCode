@@ -9,15 +9,15 @@ def parse_input():
 
 
 def solution1(*inputs):
-    x = 'TODO'
+    solution = 'TODO'
 
-    print('Solution 1: %s' % x)
+    print('Solution 1: %s' % solution)
 
 
 def solution2(*inputs):
-    x = 'TODO'
+    solution = 'TODO'
 
-    print('Solution 2: %s' % x)
+    print('Solution 2: %s' % solution)
 
 
 solution1(*parse_input())
