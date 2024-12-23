@@ -20,6 +20,6 @@ class Solver:
         print('Solution 2: %s' % solution)
 
 
-a = Solver()
-a.solve1()
-a.solve2()
+solver = Solver()
+solver.solve1()
+solver.solve2()
