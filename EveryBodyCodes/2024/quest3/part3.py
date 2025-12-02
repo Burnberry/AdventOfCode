@@ -8,6 +8,11 @@ class Solver:
         for line in get_input():
             self.grid.append(list(line))
 
+        self.directions = [
+            (1, 0), (-1, 0), (0, 1), (0, -1),
+            (1, 1), (-1, 1), (-1, -1), (1, -1)
+        ]
+
     def solve(self):
         solution = 0
         for y, row in enumerate(self.grid):
@@ -26,11 +31,11 @@ class Solver:
             depth += 1
             new_positions = set()
             for x, y in positions:
-                for dx, dy in directions:
+                for dx, dy in self.directions:
                     pos = (x+dx, y+dy)
                     if inside_grid(*pos, self.grid) and pos not in seen:
                         seen.add(pos)
-                        if self.grid[y+dy][x+dx] != '#':
+                        if self.grid[y+dy][x+dx] != '#' and 0 in [dx, dy]:
                             return depth
                         new_positions.add(pos)
 
