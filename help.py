@@ -9,6 +9,17 @@ directions = [
     (-1, 0)
 ]
 
+directions2 = [
+    (0, 1),
+    (0, -1),
+    (1, 0),
+    (-1, 0),
+    (1, 1),
+    (1, -1),
+    (-1, 1),
+    (-1, -1),
+]
+
 
 def inside_grid(x, y, grid):
     return (0 <= x < len(grid[0])) and (0 <= y < len(grid))
